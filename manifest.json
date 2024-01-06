@@ -1,0 +1,21 @@
+{
+	"manifest_version": 3,
+	"name": "Startup tools",
+	"version": "1.0",
+	"description": "Opens a predefined set of URLs in new tabs with a single click, avoiding duplicates by checking for existing tabs with the same domain. Customize your list in the 'Startup' bookmarks folder for a streamlined browsing experience.",
+	"permissions": [
+		"tabs",
+		"bookmarks"
+	],
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"action": {
+		"default_icon": "icon128.png"
+	},
+	"background": {
+		"service_worker": "background.js"
+	}
+}
